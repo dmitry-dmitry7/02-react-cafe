@@ -37,7 +37,7 @@ export default function App() {
       <VoteOptions
         onVote={handleVote}
         onReset={resetVotes}
-        canReset={totalVotes === 0}
+        canReset={totalVotes > 0}
       />
       {totalVotes ? (
         <VoteStats
